@@ -22,30 +22,29 @@
                 </svg> <span>Solo letras minúsculas y sin acentos</span>
             </p>
             <div class="caja__botones">
-                <button class="encriptador__boton" id="btn__encriptar">Encriptar</button>
-                <button class="encriptador__boton" id="btn__desencriptar">Desencriptar</button>
+                <button onclick="encriptado()" class="encriptador__boton" id="btn__encriptar">Encriptar</button>
+                <button onclick="desencriptador()" class="encriptador__boton"
+                    id="btn__desencriptar">Desencriptar</button>
             </div>
         </div>
         <div class="desencriptador">
             <div class="desencriptador__caja">
-    
-                <textarea class="desencriptador__texto" name="" id="">
-    
-                    </textarea>
-                <button id="btn__copiar">Copiar</button>
-    
-            </div>
-            <div class="desencriptador__imagen">
-                <img class="muneco" src="img/Muñeco.png" alt="">
-                <p>Ningún mensaje fue encontrado</p>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                <textarea class="desencriptador__texto" name="" id="" placeholder=""></textarea>
+                <button onclick="copiar()" id="btn__copiar">Copiar</button>
+
+                <div class="desencriptador__imagen">
+                    <img class="muneco" src="img/Muñeco.png" alt="">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
             </div>
         </div>
 
 
     </div>
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>

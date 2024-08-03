@@ -102,19 +102,19 @@ button{
     position: relative;
     width: 25vw;
     margin-right: 5vw;
-    
 
 }
-.desencriptador__caja{
-    
+.desencriptador__caja{ 
     height: 100vh;
     max-width: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .desencriptador__texto{
+    position: relative;
     width: 100%;
     min-width: 100px;
     max-width: 336px;
@@ -122,6 +122,8 @@ button{
     margin-top: 60px;
     outline: none;
     border: none;
+    font-size: 32px;
+    color: var(--gray); 
     
 }
 
@@ -130,6 +132,7 @@ button{
     bottom: 72px;
     color:var(--dark-blue);
     flex-grow: 1;
+    visibility: hidden;
 }
 .muneco{
     width: 100%;
@@ -155,4 +158,16 @@ button{
     color:var(--gray);
     font-size: 16px;
     text-align: center;
+}
+
+.desencriptador__texto:not(:placeholder-shown) +button + .desencriptador__imagen>img{
+    display: none;
+
+}
+.desencriptador__texto:not(:placeholder-shown) +button + .desencriptador__imagen>p{
+    display: none;
+
+}
+.desencriptador__texto:not(:placeholder-shown) +button{
+    visibility: visible !important;
 }
