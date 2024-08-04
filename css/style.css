@@ -19,29 +19,30 @@ body{
 .logo{
     position: absolute;
     z-index: 2;
+    top: 5%;
 
 }
 .main{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
 }
 .encriptador{
     display: flex;
     width: auto;
     position: relative;
     width: 75vw;
+    justify-content: center;
 }
 
 .encriptador__texto{
     border: none;
     outline: none;
-    width: 100%;
-    max-width: 688px;
+    width: 80%;
+    max-width: 1200px;
     min-width: 200px;
-    height: 288px;
+    height: 50%;
     resize: none;
-    margin: 168px 0 0 14vw;
+    margin-top: 168px ;
     overflow-wrap: break-word;
     overflow: hidden;
     font-size: 32px;
@@ -58,33 +59,32 @@ button{
     min-width: 100px;
     max-width: 328px;
     width: 100%;
-    height: 67px;
+    height: 7vh;
+    max-height: 67px;
     font-size: 16px;
     border-radius: 24px;
     border: 2px solid var(--dark-blue);
 }
 .encriptador__parrafo{
-    margin-left: 14vw;
     position: absolute;
-    bottom: 155px;
+    left: 0;
+    top: -25px;
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--gray);
+    font-weight: 500;
 
 }
 .caja__botones{
     gap: 10px;
     max-width: 680px;
-    width: calc(100% - 14vw);
-    margin-left: 14vw;
+    width:100%;
     position: absolute;
     bottom: 0px;
-    margin-bottom: 72px;
+    margin-bottom: 7%;
     display: flex;
     justify-content: space-between;
-    z-index: 4;
-
 }
 #btn__encriptar{
     background-color: var(--dark-blue);
@@ -101,8 +101,9 @@ button{
     flex-direction: column;
     position: relative;
     width: 25vw;
-    margin-right: 5vw;
-
+    margin: auto;
+    align-items: center;
+    border-left: 2px solid var(--gray);
 }
 .desencriptador__caja{ 
     height: 100vh;
@@ -115,10 +116,9 @@ button{
 }
 .desencriptador__texto{
     position: relative;
-    width: 100%;
-    min-width: 100px;
+    width: 90%;
     max-width: 336px;
-    height: 70%;
+    height: 80%;
     margin-top: 60px;
     outline: none;
     border: none;
@@ -129,14 +129,16 @@ button{
 
 #btn__copiar{
     position: absolute;
-    bottom: 72px;
+    bottom: 0%;
+    margin-bottom: 22%;
+    width: 90%;
     color:var(--dark-blue);
     flex-grow: 1;
     visibility: hidden;
 }
 .muneco{
     width: 100%;
-    max-height:250px ;
+    max-height:500px ;
 
 }
 .desencriptador__imagen{
@@ -144,7 +146,10 @@ button{
     top: 140px;
     right: 0;
     left: 0;
+    top: 50%;
+    transform: translate(0 ,-50%);
     margin: auto;
+
 }
 .desencriptador__imagen p:nth-of-type(1){
     font-size: 24px;
