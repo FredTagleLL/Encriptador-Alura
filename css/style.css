@@ -21,10 +21,12 @@ body{
     z-index: 2;
     top: 5%;
 
+
 }
 .main{
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 }
 .encriptador{
     display: flex;
@@ -95,41 +97,40 @@ button{
     color: var(--dark-blue);
     flex-grow: 1;
 }
+#btn__desencriptar , #btn__encriptar,#btn__copiar{
+    transition: background-color 0.5s, font-weight 0.5s;
+}
 
 .desencriptador{
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
     width: 25vw;
     margin: auto;
     align-items: center;
-    border-left: 2px solid var(--gray);
+
 }
 .desencriptador__caja{ 
-    height: 100vh;
-    max-width: 400px;
     width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 .desencriptador__texto{
-    position: relative;
-    width: 90%;
-    max-width: 336px;
-    height: 80%;
-    margin-top: 60px;
+    width: 95%;
+    height: 100%;
+    margin-top: 10%;
     outline: none;
     border: none;
     font-size: 32px;
     color: var(--gray); 
-    
 }
 
 #btn__copiar{
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     margin-bottom: 22%;
     width: 90%;
     color:var(--dark-blue);
@@ -175,4 +176,73 @@ button{
 }
 .desencriptador__texto:not(:placeholder-shown) +button{
     visibility: visible !important;
+}
+
+/*aniamcioens*/
+
+#btn__encriptar:hover{
+    cursor: pointer;
+    background-color:#082d5a ;
+    border-color: #082d5a;
+    font-weight: 600;
+}
+#btn__desencriptar:hover,#btn__copiar:hover{
+    cursor: pointer;
+    color: #082d5a;
+    font-weight: 600;
+    border-color: #082d5a;
+}
+/*responsive tablet*/
+@media (max-width:768px){
+    .main{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    .encriptador{
+        flex-grow:1 ;
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .encriptador__texto{
+        margin-top: 20%;
+        width: 95%;
+        height: 70%;
+    }
+    .logo{
+        width: 50.58px;
+        height: 31px;
+
+    }
+    .caja__botones{
+        margin-bottom: 1%;
+    }
+    .muneco{
+        display: none;
+    }
+    .desencriptador{
+        flex-grow: 1;
+        height: auto;
+        width: 100vw;
+    }
+    .desencriptador__caja{
+        width: 100%;
+        
+    }
+    .desencriptador__texto{
+        width:90%; 
+        margin-top: 2%;
+        height: 15vh;
+    }
+    .desencriptador__texto:not(:placeholder-shown){
+        height: 40vh;
+    }
+    #btn__copiar{
+        bottom: 0;
+        margin: 2% ;
+        width: 90%;
+        max-width: 100vw;
+    }
 }
