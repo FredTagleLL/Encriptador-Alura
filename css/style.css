@@ -23,6 +23,15 @@ body{
 
 
 }
+h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 5%;
+    font-size: clamp(2rem,3vw,4rem);
+    color:#043672;
+    text-shadow: 5px 5px 5px #082d5a;
+}
 .main{
     display: flex;
     justify-content: space-between;
@@ -189,6 +198,10 @@ button{
 }
 /*responsive tablet*/
 @media (max-width:768px){
+    h1{
+        top: 3vh;
+        font-size: clamp(1.1rem,2vw,2rem);
+    }
     .main{
         flex-direction: column;
         width: 100vw;
@@ -209,6 +222,7 @@ button{
     .logo{
         width: 50.58px;
         height: 31px;
+        top: 3vh;
 
     }
     .caja__botones{
@@ -222,10 +236,6 @@ button{
         flex-grow: 1;
         height: auto;
         width: 100vw;
-    }
-    .desencriptador__caja{
-        width: 100%;
-        
     }
     .desencriptador__texto{
         width:90%; 
@@ -244,7 +254,11 @@ button{
 /*responsive celular*/
 @media (max-width:375px) {
     .logo{
-        top: 1%;  
+        top: 2%;  
+    }
+    h1{
+        top: 10px;
+        font-size: 6vw;
     }
     body:has(.desencriptador__texto:not(:placeholder-shown)){
         overflow-y: auto;
