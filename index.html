@@ -14,7 +14,7 @@
         <div class="encriptador">
             <textarea class="encriptador__texto" type="text" name="" id=""
                 placeholder="Ingrese el texto aqui"></textarea>
-                <div class="caja__botones">
+            <div class="caja__botones">
                 <p class="encriptador__parrafo"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -28,17 +28,14 @@
             </div>
         </div>
         <div class="desencriptador">
-            <div class="desencriptador__caja">
+            <textarea class="desencriptador__texto" readonly name="" id="" placeholder=""></textarea>
 
-                <textarea class="desencriptador__texto" name="" id="" placeholder=""></textarea>
-                <button onclick="copiar()" id="btn__copiar">Copiar</button>
-
-                <div class="desencriptador__imagen">
-                    <img class="muneco" src="img/Muñeco.png" alt="">
-                    <p>Ningún mensaje fue encontrado</p>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                </div>
+            <div class="desencriptador__imagen">
+                <img class="muneco" src="img/Muñeco.png" alt="">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
+            <button href="" onclick="copiar()" id="btn__copiar">Copiar</button>
         </div>
 
 
