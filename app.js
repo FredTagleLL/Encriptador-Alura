@@ -37,7 +37,7 @@ function encriptado(){
         }
         document.querySelector(".desencriptador__texto").value=resultado;
         resultado=""
-        if(window.innerWidth <=375 && getComputedStyle(parrafo).visibility === "visible" )  {
+        if(window.innerWidth <=425 && getComputedStyle(parrafo).visibility === "visible" )  {
                 document.querySelector("#btn__copiar").scrollIntoView({behavior:"smooth"});
         }else{
                 document.querySelector(".logo").scrollIntoView({behavior:"smooth"});
