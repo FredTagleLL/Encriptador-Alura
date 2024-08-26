@@ -197,7 +197,7 @@ button{
     border-color: #082d5a;
 }
 /*responsive tablet*/
-@media (max-width:768px){
+@media (max-width:825px){
     h1{
         top: 3vh;
         font-size: clamp(1.1rem,2vw,2rem);
@@ -252,7 +252,7 @@ button{
     }
 }
 /*responsive celular*/
-@media (max-width:375px) {
+@media (max-width:425px) {
     .logo{
         top: 2%;  
     }
